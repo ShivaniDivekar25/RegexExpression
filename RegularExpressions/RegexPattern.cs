@@ -33,5 +33,17 @@ namespace RegularExpressions
                 Console.WriteLine("Last name is not valid");
             }
         }
+        public void ValidateEmail(string email)
+        {
+            string emailId = "^[a-zA-z]{3}[.][a-zA-Z]{3}@[a-zA-z]{10}[.][a-z]{2}[.][a-z]{2}$";//"^[a-zA-Z]+[.+_-]{0,1}[a-z]+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-z]{2}){0,1}$";
+            if (Regex.IsMatch(email, emailId))
+            {
+                Console.WriteLine("The email id is valid");
+            }
+            else
+            {
+                Console.WriteLine("The email is not valid email");
+            }
+        }
     }
 }
