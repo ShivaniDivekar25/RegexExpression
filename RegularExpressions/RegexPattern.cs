@@ -21,5 +21,17 @@ namespace RegularExpressions
                 Console.WriteLine("First name is not valid");
             }
         }
+        public void ValidateLastName(string name)
+        {
+            string lastName = "^[A-Z]{1}[a-z]{2,}$";
+            if (Regex.IsMatch(name, lastName))
+            {
+                Console.WriteLine("Last name is valid");
+            }
+            else
+            {
+                Console.WriteLine("Last name is not valid");
+            }
+        }
     }
 }
