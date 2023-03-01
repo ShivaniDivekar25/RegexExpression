@@ -69,5 +69,17 @@ namespace RegularExpressions
                 Console.WriteLine("The password is not valid");
             }
         }
+        public void ValidatePasswordWithLeastOneUppercase(string password)
+        {
+            string passwords = "^[A-Za-z]{1,}$";
+            if (Regex.IsMatch(password, passwords))
+            {
+                Console.WriteLine("The password is valid");
+            }
+            else
+            {
+                Console.WriteLine("The password is not valid");
+            }
+        }
     }
 }
