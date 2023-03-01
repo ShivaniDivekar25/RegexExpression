@@ -81,5 +81,17 @@ namespace RegularExpressions
                 Console.WriteLine("The password is not valid");
             }
         }
+        public void ValidatePasswordWithLeastOneNumeric(string password)
+        {
+            string passwords = "^[A-Za-z0-9]{1,}$";
+            if (Regex.IsMatch(password, passwords))
+            {
+                Console.WriteLine("The password is valid");
+            }
+            else
+            {
+                Console.WriteLine("The password is not valid");
+            }
+        }
     }
 }
