@@ -45,5 +45,17 @@ namespace RegularExpressions
                 Console.WriteLine("The email is not valid email");
             }
         }
+        public void ValidatePhoneNumber(string number)
+        {
+            string phoneNumber = "^[0-9]{2}[ ][0-9]{10}$";
+            if (Regex.IsMatch(number, phoneNumber))
+            {
+                Console.WriteLine("The phone number is valid");
+            }
+            else
+            {
+                Console.WriteLine("The phone number is not valid");
+            }
+        }
     }
 }
