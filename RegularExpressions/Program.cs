@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Regular Expression program");
             Console.WriteLine("Please enter an option");
-            Console.WriteLine("1:Validate first name\n2:Validate last name\n3:Validate Email\n4:Validate Phone number");
+            Console.WriteLine("1:Validate first name\n2:Validate last name\n3:Validate Email\n4:Validate Phone number\n5:Validate password with least 8 char");
             int option = Convert.ToInt32(Console.ReadLine());
             RegexPattern regex = new RegexPattern();
             switch (option)
@@ -22,6 +22,9 @@
                     break;
                 case 4:
                     regex.ValidatePhoneNumber("91 8983922706");
+                    break;
+                case 5:
+                    regex.ValidatePassword("ShivaniD");
                     break;
                 default:
                     Console.WriteLine("Please enter correct option");
