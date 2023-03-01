@@ -24,7 +24,7 @@
                     regex.ValidatePhoneNumber("91 8983922706");
                     break;
                 case 5:
-                    regex.ValidatePassword("ShivaniD");
+                    regex.ValidatePassword("ShivMalhar");
                     break;
                 default:
                     Console.WriteLine("Please enter correct option");
